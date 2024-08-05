@@ -45,6 +45,7 @@ module.exports = {
 
       },
       colors: {
+        main: colors.main,
         base1: colors.base1,
         text1: colors.text1,
         text2: colors.text2,

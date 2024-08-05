@@ -4,11 +4,11 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "../lib/cn"
 
 const inputVariants = cva(
-    "flex h-9 w-full bg-base1 rounded-xl border border-border px-3 py-1 text-sm shadow-sm transition-colors max-w-sm items-center gap-1.5 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary disabled:cursor-not-allowed disabled:opacity-50",
+    "flex h-9 w-full bg-base1 rounded-xl border border-border px-3 py-1 text-sm shadow-sm transition-colors max-w-sm items-center gap-1.5 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vas disabled:cursor-not-allowed disabled:opacity-50",
     {
         variants: {
             variant: {
-                default: "bg-base2 border-none",
+                default: "bg-base1 border-none ",
                 outline: "bg-base1 focus-visible:ring-accent ",
                 error: 'focus-visible:ring-destructive',
                 success: 'focus-visible:ring-success',
