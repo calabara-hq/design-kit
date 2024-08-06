@@ -23,10 +23,10 @@ export default function DynamicCard({ space, index }) {
     }, [data, loading]);
 
     return (
-        <Link
+        <div
             key={index}
             draggable={false}
-            href={`${space.name}`}
+            //href={`${space.name}`}
             style={{
                 backgroundImage: `linear-gradient(to bottom, ${backgroundColor} 0%, #1c1f26 100%)`,
             }}
@@ -36,9 +36,9 @@ export default function DynamicCard({ space, index }) {
         >
             <div className="flex flex-col gap-4 items-center justify-between p-4 h-full w-full rounded-xl bg-black/[.25]">
                 <div className="relative w-28 h-28">
-                    <UplinkImage
+                    <img
                         src={space.logoUrl}
-                        fill
+                        //fill
                         alt="spaceLogo"
                         className="object-cover mask mask-circle"
                         sizes={"10vw"}
@@ -54,8 +54,8 @@ export default function DynamicCard({ space, index }) {
                 <p>base</p>
 
             </div>
-            <span className="absolute top-[1.25rem] right-[1.25rem]"><HiTrendingUp className="w-6 h-6 text-success" /></span>
-        </Link>
+            {/* <span className="absolute top-[1.25rem] right-[1.25rem]"><HiTrendingUp className="w-6 h-6 text-success" /></span> */}
+        </div>
     );
 }
 
